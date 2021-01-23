@@ -1,0 +1,24 @@
+{
+  "name": "giovandyucra",
+  "version": "1.0.0",
+  "description": "Portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giovandyucg/GiovandYucra.git"
+  },
+  "keywords": [
+    "Js",
+    "Html",
+    "Css"
+  ],
+  "author": "Giovand Yucra Gavilan <yucragavi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Giovandyucg/GiovandYucra/issues"
+  },
+  "homepage": "https://github.com/Giovandyucg/GiovandYucra#readme"
+}
