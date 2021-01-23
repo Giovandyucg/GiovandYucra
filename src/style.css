@@ -19,73 +19,102 @@ body{
 header{
     /* display: flex; */
     
-    background: rgb(80, 4, 116);
+    /* background: rgb(80, 4, 116); */
+    /* background: #5D48B9; */
+    background:#050505;
     
 }
 nav{
     display: flex;
-    justify-content: space-between;
-    /* position: static; */
-    /* color:rgb(110, 23, 150) ; */
-    /* position: fixed;
-    top: 0;
-    width:100%; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
 }
-.menus{
+.menus, .icons{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-family: 'PT Serif', serif;
-   
-}
-.menu:hover{
-    color: rgb(132, 112, 151);
-    font-size: 35px;
-}
-ul .inicio, .menu{
-    display: flex;
-    color: white;
     text-decoration: none;
+
+}
+.menus{
+    margin-left: 200px;
+}
+
+.icons a, .menu{
+    display: flex;
+    justify-content: space-between;
+    color: white;
     margin-left: 15px;
     margin-right: 15px;
     align-items: center;
     font-size:30px;
     font-family:  serif;
-    
-    
+    list-style: none;
+    text-decoration: none;
+}
+.icons a:hover{
+    color: #e09f3e;
+    font-size: 35px;
+}
+.menu:hover{
+    color: #e09f3e;
+    font-size: 35px;
+    font-family: 'PT Serif', serif;
+    list-style: none;
+    text-decoration: none;
 }
 .container-figure img{
     border-radius: 50%;
+    width: 60%;
 }
-.inicio:hover{
-    color: rgb(132, 112, 151);
-    font-size: 35px;
+.avanzar{
+    display: flex;
+    justify-content: center;
+    
+}
+.inicio i{
+    
+    color:  #221d15;
+    
+    
+}
+.inicio i:hover{
+    color: #e09f3e;
+    font-size: 50px;
 }
 .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* background: white; */
-    background:rgb(236, 223, 245);
+    background:#fff;
     margin: 50px 10px;
     border-radius: 20px;
+    height: 500px;
 }
 .container:hover{
     
-    background:rgb(195, 186, 201);
+    /* border:2px  #dee2e6; */
+    /* background:#e9ecef ; */
+    background:#e9edc9 ;
     margin: 55px 15px;
-    border-radius: 25px;
+    border-radius: 50px;
     transition: 1s ease;
 }
 .container:hover .title{
     
-    transform: rotate(2deg);
+    transform: rotate(1deg);
     /* transform: rotate(-5deg); */
 }
 .img-burguer,
 .img-redSocial,
 .img-mdlinks,
 .img-data{
+    /* border: 2px solid red; */
+    box-shadow: 2px 2px 10px #666;
+    /* box-shadow: 5px -5px 0 2px rgb(226, 220, 231); */
+    /* box-shadow: 5px 5px 25px rgb(201, 191, 191) inset; */
     border-radius: 10px;
 }
 .container-title{
@@ -103,24 +132,25 @@ ul .inicio, .menu{
     font-size: 20px;
     margin-bottom: 15px;
 }
-.icons a{
- background: rgb(236, 223, 245);
- color:#050505;
- font-size: 20px;
- margin: 20px 10px;
-}
+
  /* Conocimientos */
 .tec{
     background: white;
+    /* margin: 20px 0; */
 }
+/* .tec-conocimientos{
+    margin: 20px 0;
+} */
 .tec-conocimientos h2{
     font-size: 30px;
     display: flex;
     justify-content: center;
+    margin: 40px 20px;
+    
 }
 .tec-conocimientos:hover{
     font-size: 35px;
-    color: rgb(65, 15, 99);
+    color:#e09f3e;
     margin: 5px 25px;
     transition: 1s ease;
 }
@@ -153,11 +183,11 @@ div .texto{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 40px 20px;
 }
 .intro-proyectos:hover{
     font-size: 35px;
-    color: rgb(65, 15, 99);
+    color: #e09f3e;
     margin: 5px 25px;
     transition: 1s ease;
 }
@@ -168,7 +198,7 @@ div .texto{
     
     display: flex;
     flex-direction: column;
-    background: rgb(236, 223, 245);
+    background: #fff;
 }
 .proyecto-redSocial,
 .proyecto-burguer,
@@ -202,27 +232,31 @@ div .texto{
 .intro-redSocial a,
 .intro-mdlinks a,
 .intro-data a{
-    margin-top: 10px;
+    margin: 10px 5px;
     padding: 10px 30px;
-    border:3px;
-    border-radius: 5px;
-    background: rgb(80, 4, 116);
-    color: white;
+    border:2px  solid #adb5bd;
+    border-radius: 10px;
+    /* background: #495057; */
+    background: #e09f3e;
+    box-shadow: 2px 2px 10px #666;
+
+    /* background: #e29578; */
+    color: #fff;
     text-decoration: none;
 }
 .intro-burguer a:hover,
 .intro-redSocial a:hover,
 .intro-mdlinks a:hover,
 .intro-data a:hover{
-    background: rgb(158, 101, 211);
+    background: #343a40;
     padding: 15px 35px;
+    color:#fefae0;
 }
 footer{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    background:rgb(96, 37, 172) ;
-    color: white;
+    background:#343a40 ;
+    color: #edf2f4;
   
 }
 .intro-contacto h2{
@@ -231,22 +265,14 @@ footer{
     align-content: center;
     font-size: 30px;
     margin-top: 20px ;
-    /* background: rgb(108, 62, 168); */
-    /* /* color: white; */
-}
-.line1{
-    width: 15%;
-    margin-left:580px;
-    margin-bottom: 20px;
-
 }
 .intro-contacto p{
-    margin-left: 450px;
+    margin-left: 400px;
     font-size: 20px;
 }
 .intro-contacto:hover{
     font-size: 35px;
-    color: rgb(65, 15, 99);
+    color: #e09f3e;
     margin: 5px 25px;
     transition: 1s ease;
 }
@@ -254,21 +280,29 @@ footer{
     transform: translate3d(-5px, -5px, -5px);
 }
 .name{
-    background:rgb(236, 223, 245);
+    background: #050505;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-content: center;
-    color:rgb(96, 37, 172);
+    color: #fff;;
 
 }
 .social {
     display: flex;
     justify-content: center;
+    transition: 1s ease;
 }
 .social a{
-    color:rgb(236, 223, 245);
-    background: rgb(96, 37, 172);
+    color:#fff;
+    background: #343a40 ;
     font-size: 40px;
     margin: 20px 20px;
+}
+.social a:hover i{
+    color:#050505;
+    background: #343a40 ;
+    font-size: 50px;
+    margin: 20px 20px;
+    transform: translateZ(5px);
 }
